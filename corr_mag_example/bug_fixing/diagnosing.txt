@@ -1,0 +1,19 @@
+MCMC	Model	Data	True rho	What is fixed? 			All Okay?
+2.1		Corr	Corr	0.6			Rho, all else free. 	Nope, overestimating n_trig \approx 430 rather than 239. Try starting at true
+2.2 	Corr 	Corr	0.6			Rho, all else free. 	Nope, still goes up to 420ish triggered. nu_t and xi_t way too big. Try fixing B.
+2.3 	Corr 	Corr 	0.6 		Rho, B.									Not really. ETAS are okay but marginal mag parameters are not being recovered. 
+2.4 	Corr	Dual	0.0 		Rho, B. 				ETAS all okay. Magnitude parameters are not 
+
+_____ FIXED ITERAION COUNTER ERROR line 671 _______
+
+2.4 	Corr 	Dual 	0.0 		Rho, B.					ETAS all okay, Magnitude parmaters now okay. Try releasing rho.
+2.5		Corr 	Dual 	0.0 		B 						ETAS all okay, Matngutes and rho still okay. Try releasing B. 
+2.6 	Corr 	Dual 	0.0         Nothing.				NB starting at truth of everything. All seems good here. Try a worse start. 
+2.7 	Corr 	Dual 	0.0 		Nothing. 				Lingereda t 420 trig, settled to truth. All looking good :) 
+															(this was only 1000 iterations - do a 5000 run later after testing corr cat.)
+
+__ TESTING ON CORRELATED CATALOGE NOW _____
+
+2.8 	Corr 	Corr 	0.6 		Nothing.				All good. Do longer runs of 2.7 and 2.8, say 5000 samples. 
+2.9 	Corr 	Dual 	0.0 		Nothing.				Long run of 2.7. All good. 
+2.10 	Corr 	Corr 	0.6 		Nothing. 				Still running. Compare psi posteriors for correlated catalogue when using dual or correlated model
